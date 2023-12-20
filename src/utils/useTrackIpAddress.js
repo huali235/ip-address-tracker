@@ -11,6 +11,8 @@ export async function trackIpAddress(ipAddress, setLocation) {
       city: data.city,
       state: data.region_code,
       zipcode: data.zip,
+      country: data.country_name,
+      region: data.region_name,
       lat: data.latitude,
       long: data.longitude,
       countryEmoji: data.location.country_flag_emoji,
