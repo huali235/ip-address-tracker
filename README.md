@@ -25,5 +25,5 @@ To install ip-address-tracker, follow these steps:
 
 To use ip-address-tracker, follow these steps:
 
-1. Start the development server: `npm start`
+1. Start the development server: `npm run dev`
 2. Open your browser and navigate to `http://localhost:5173/`
