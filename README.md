@@ -4,7 +4,7 @@
 
 This project is a web application that allows users to track the geographical location and ISP details of an IP address. Users can enter an IP address, and the application will display the city, region, country, postal code, latitude, longitude, and ISP of the IP address.
 
-The application is built with React, a popular JavaScript library for building user interfaces. It uses the Tailwind CSS framework for styling, and `react-router-dom` for routing. The application also uses the `react-icons` library for displaying icons, and the `prop-types` library for type checking of props.
+The application is built with React + TypeScript. It uses the Tailwind CSS framework for styling, and `react-router-dom` for routing. The application also uses the `react-icons` library for displaying icons, and the `prop-types` library for type checking of props.
 
 ## Prerequisites
 
