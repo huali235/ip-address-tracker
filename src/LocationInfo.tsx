@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import Column from "./Column";
-import { LocationContext } from "./contexts/LocationContext";
+import { LocationContext, LocationType } from "./contexts/LocationContext";
 import { IoIosGlobe } from "react-icons/io";
 import { IoLocationOutline } from "react-icons/io5";
 import { GiModernCity } from "react-icons/gi";
@@ -8,7 +8,8 @@ import { useNavigate } from "react-router-dom";
 
 function LocationInfo() {
   const { location, ipAddress } = useContext(LocationContext);
-  const { city, zipcode, country, region, countryEmoji } = location;
+  const { city, zipcode, country, region, countryEmoji } =
+    location as LocationType;
   const navigate = useNavigate();
 
   function handleBack() {

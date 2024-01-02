@@ -1,6 +1,10 @@
-import PropTypes from "prop-types";
+interface ColumnProps {
+  heading: string;
+  children: React.ReactNode;
+  Icon?: React.FC;
+}
 
-function Column({ heading, children, Icon }) {
+function Column({ heading, children, Icon }: ColumnProps) {
   return (
     <div className="ml-5">
       <div className="flex items-center gap-2 mb-3">
@@ -11,11 +15,5 @@ function Column({ heading, children, Icon }) {
     </div>
   );
 }
-
-Column.propTypes = {
-  heading: PropTypes.string,
-  children: PropTypes.node,
-  Icon: PropTypes.elementType,
-};
 
 export default Column;

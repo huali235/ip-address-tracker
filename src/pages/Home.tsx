@@ -7,8 +7,8 @@ function Home() {
   const { ipAddress, setIpAddress, setLocation } = useContext(LocationContext);
   const navigate = useNavigate();
 
-  async function handleSubmit(e) {
-    e.preventDefault();
+  async function handleSubmit(event: React.MouseEvent<HTMLFormElement>) {
+    event.preventDefault();
 
     if (!ipAddress) return;
     await trackIpAddress(ipAddress, setLocation);

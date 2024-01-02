@@ -7,11 +7,11 @@ import {
   TileLayer,
   ZoomControl,
 } from "react-leaflet";
-import { LocationContext } from "./contexts/LocationContext";
+import { LocationContext, LocationType } from "./contexts/LocationContext";
 
 function Map() {
   const { location } = useContext(LocationContext);
-  const { lat, long } = location;
+  const { lat, long } = location as LocationType;
   return (
     <MapContainer
       center={[lat, long - 0.04]}
